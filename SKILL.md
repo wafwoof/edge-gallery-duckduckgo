@@ -1,6 +1,6 @@
 ---
 name: edge-gallery-duckduckgo
-description: A skill that allows users to search via DuckDuckGo and retrieve relevant information.
+description: A skill that allows users to search via DuckDuckGo and retrieve relevant information. Single keyword queries are recommended for optimal results.
 ---
 
 # Edge Gallery DuckDuckGo Skill

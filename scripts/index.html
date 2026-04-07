@@ -3,7 +3,12 @@
 <body>
 <script>
 async function ai_edge_gallery_get_result(data) {
-  const { query } = JSON.parse(data);
+  let query;
+  try {
+    query = JSON.parse(data).query;
+  } catch (e) {
+    query = data;
+  }
 
   const response = await fetch('https://api.duckduckgo.com/?q=' + encodeURIComponent(query) + '&format=json');
   const result = await response.json();
